@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+read -rp "enter a host to scan: " host
+read -rp "select options for nmap: " options
+
+echo "scanning $host with options $options"
+
+nmap $options $host
